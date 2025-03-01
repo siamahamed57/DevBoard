@@ -34,6 +34,7 @@ nav {
     text-align: center;
 }
 #bgChanger{
+    cursor: pointer;
     background-color:#F4F7FF;
     width: 40px;
    padding:12px;
@@ -71,7 +72,7 @@ nav {
     margin: 0 auto; 
     display: flex;
     justify-content: space-between;
-    height: 740px;
+    height: 760px;
     box-sizing: border-box;
 
     margin-top: 24px;
@@ -131,6 +132,7 @@ nav {
     margin-left: -140px;
 }
 #discoverCard{
+    cursor: pointer;
     display: flex;
     width:340px;
     height: 100px;
@@ -171,7 +173,6 @@ nav {
     justify-content:space-between;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap:30px;
-    margin-top: 20px;
     max-width: 1000px;
 }
 
@@ -262,11 +263,20 @@ h3 {
 
 #activityLog {
     text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    gap: 10px;
 }
-
+#activityLog img{
+    width: 24px;
+    height: 24px;
+}
 #activityLog h3 {
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    
 }
 
 #logList {
@@ -276,23 +286,25 @@ h3 {
 }
 
 #logList li {
-    background: #ffffff;
+    background: #F4F7FF;
     padding: 10px 15px;
+    font-family: "Poppins", sans-serif;
     border-radius: 8px;
     margin-bottom: 20px; /* Gap between messages */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
+    font-size:14px;
     text-align: left;
 }
 
 #clearLog {
-    background: #ff4d4d;
+    font-family: "Poppins", sans-serif;
+    background: #3752FD;
+    margin-bottom: 20px;
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 8px;
     cursor: pointer;
-    margin-top: 15px;
+    
     font-size: 16px;
     transition: 0.3s;
 }
@@ -300,4 +312,40 @@ h3 {
 #clearLog:hover {
     background: #cc0000;
 }
-/* Media Queries for Responsive Design */
+
+#discoverCard h1{
+    width: 160px;;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.counter button{
+    font-family: "Poppins", sans-serif;
+    background: #3752FD;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.hr {
+    border: none;
+    border-top: 1px dotted #ccc;
+    margin: 20px 0;
+}
+
+.question {
+    width: 1240px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.qa{
+    background-color:#F4F7FF;
+    padding:20px;
+    border-radius: 16px;
+}

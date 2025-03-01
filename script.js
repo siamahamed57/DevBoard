@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     const taskCounter = document.getElementById("taskCounter");
     const completedCounter = document.getElementById("completedCounter");
@@ -29,9 +28,9 @@ document.addEventListener("DOMContentLoaded", function() {
             localStorage.setItem("activityLog", JSON.stringify(logs));
         }
     }
-    taskCounter.textContent = totalTasks;
+    taskCounter.textContent = String(totalTasks).padStart(2, '0');
 
-    completeButtons.forEach(button => {
+    completeButtons.forEach((button, index) => {
         button.addEventListener("click", function() {
             if (!this.disabled) {
                 const taskCard = this.closest(".task-card");
@@ -40,13 +39,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 alert(`🎉 Congrats! You completed: ${taskTitle}`);
 
                 this.disabled = true;
-                this.style.opacity = "0.5";
+                this.style.opacity = "0.1";
                 completedTasks++;
-                completedCounter.textContent = completedTasks;
+                completedCounter.textContent = String(completedTasks).padStart(2, '0');
                 totalTasks--;
-                taskCounter.textContent = totalTasks;
+                taskCounter.textContent = String(totalTasks).padStart(2, '0');
                 const currentTime = getCurrentTime();
-                addLog(`You have completed the task: ${taskTitle} at ${currentTime}`);
+                addLog(`You have completed the task ${taskTitle} at ${currentTime}`);
 
                 if (completedTasks === completeButtons.length) {
                     alert("🎉 Congratulations! You completed all tasks!");
@@ -63,11 +62,9 @@ document.addEventListener("DOMContentLoaded", function() {
         logList.innerHTML = "";
         localStorage.removeItem("activityLog");
     });
-
 });
 
-
-    document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     const currentDate = new Date();
     const options = { weekday: 'short', month: 'short', day: '2-digit', year: 'numeric' };
     const formattedDate = currentDate.toLocaleDateString('en-US', options).replace(',', ' ,');
@@ -76,5 +73,3 @@ document.addEventListener("DOMContentLoaded", function() {
         ${formattedDate}
     `;
 });
-
-
