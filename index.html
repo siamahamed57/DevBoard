@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <img id="logo" src="asset/Group 2.png" alt="">
+        <div class="counter">
+            <div class="checkboxitem">
+                <img src="asset/fi-sr-checkbox.png" alt="" class="check">
+                <span><span id="completedCounter">0</span></span>
+            </div>
+             <img src="asset/Group 8 (1).png" alt="" id="bgChanger">
+        </div>
+    </nav>
+    <main>
+        <div class="banner">
+            <div class="item1">
+               <div class="task_info">
+                <section id="taskAssigned">
+                    <img src="asset/fi-sr-checkbox.png" alt="" class="check">
+                    <h3>Task Assigned</h3>
+                    <h1> <span id="taskCounter"><br></span></h1>
+                </section>
+                <section>
+                    <div id="discoverCard" onclick="window.location.href='blog.html'">
+                        <img src="asset/fi_18577309.png" alt="">
+                        <h1>
+                            Discover Something New Today!
+                        </h1>
+                    </div>
+                </section>
+                <section>
+                    <div id="calendar">
+                        <img src="asset/fi-sr-calendar.png" alt="">  
+                    </div>
+                </section>
+               </div>
+        <div class="task_details">
+            <div class="task-container">
+                <div class="task-card" data-task="Fix Mobile Button Issue">
+                    <span class="company">ShopEase</span>
+                    <h3>Fix Mobile Button Issue</h3>
+                    <p class="task-detail">Debug using Chrome DevTools, check for overlappi...</p>
+                    <div class="button">
+                        <p class="deadline">Deadline <br><strong>21 March 2025</strong></p>
+                        <button class="completed completeBtn">Completed</button>
+                    </div>
+                </div>
+      
+                <div class="task-card" data-task="Add Dark Mode">
+                    <span class="company" >CloudSync</span>
+                    <h3>Add Dark Mode</h3>
+                    <p class="task-detail">Store the user's preference in localStorage, update CSS vari...</p>
+                    <div class="button">
+                        <p class="deadline">Deadline <br><strong>21 March 2025</strong></p>
+                        <button class="completed completeBtn">Completed</button>
+                    </div>
+                </div>
+        
+                <div class="task-card" data-task="Optimize Home Page">
+                    <span class="company" >SwiftPay</span>
+                    <h3>Optimize Home page</h3>
+                    <p class="task-detail">Debug using Chrome DevTools, check for overlappi...</p>
+                    <div class="button">
+                        <p class="deadline">Deadline <br><strong>21 March 2025</strong></p>
+                        <button class="completed completeBtn">Completed</button>
+                    </div>
+                   
+                </div>
+        
+                <div class="task-card" data-task="Add New Emoji">
+                    <span class="company">Meta</span>
+                    <h3>Add new emoji 🤲</h3>
+                    <p class="task-detail">Debug using Chrome DevTools, check for overlappi...</p>
+                    <div class="button">
+                        <p class="deadline">Deadline <br><strong>21 March 2025</strong></p>
+                        <button class="completed completeBtn">Completed</button>
+                    </div>
+                </div>
+        
+                <div class="task-card" data-task="Integrate OpenAI API">
+                    <span class="company">Google LLC</span>
+                    <h3>Integrate OpenAI API</h3>
+                    <p class="task-detail">Debug using Chrome DevTools, check for overlappi...</p>
+                    <div class="button">
+                        <p class="deadline">Deadline <br><strong>21 March 2025</strong></p>
+                        <button class="completed completeBtn">Completed</button>
+                    </div>
+                </div>
+        
+                <div class="task-card" data-task="Improve Job Searching">
+                    <span class="company">Glassdoor</span>
+                    <h3>Improve Job searching</h3>
+                    <p class="task-detail">Debug using Chrome DevTools, check for overlappi...</p>
+                    <div class="button">
+                        <p class="deadline">Deadline <br><strong>21 March 2025</strong></p>
+                        <button class="completed completeBtn">Completed</button>
+                    </div>
+                </div>
+            </div>   
+               </div>
+               
+            </div>
+
+            <div class="item2">
+                <section id="activityLog">
+                    <h3>Activity Log</h3>
+                    <button id="clearLog">🗑 Clear History</button>
+                    <ul id="logList"></ul>
+                  
+                </section>   
+            </div>   
+        </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>

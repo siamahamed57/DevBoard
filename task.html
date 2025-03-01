@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Cards</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f9faff;
+}
+
+.task-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+.task-card {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e4f0;
+}
+
+.company {
+    display: inline-block;
+    background: #edf2fd;
+    color: #3c4a7f;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #182849;
+}
+
+.task-detail {
+    background: #f4f5f7;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin: 10px 0;
+    color: #3d4c63;
+}
+
+.deadline {
+    font-size: 14px;
+    color: #5c6f8f;
+    margin: 10px 0;
+}
+
+.completed {
+    background: #4f46e5;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.completed.light {
+    background: #d9dff6;
+    color: #4f46e5;
+}
+
+    </style>
+</head>
+<body>
+    <div class="task-container">
+        <div class="task-card">
+            <span class="company">ShopEase</span>
+            <h3>Fix Mobile Button Issue</h3>
+            <p class="task-detail">Debug using Chrome DevTools, check for overlapping issues.</p>
+            <p class="deadline">Deadline <br><strong>21 March 2025</strong></p>
+            <button class="completed">Completed</button>
+        </div>
+        
+        <div class="task-card">
+            <span class="company">CloudSync</span>
+            <h3>Add Dark Mode</h3>
+            <p class="task-detail">Store the user's preference in localStorage, update CSS variables.</p>
+            <p class="deadline">Deadline <br><strong>21 March 2025</strong></p>
+            <button class="completed light">Completed</button>
+        </div>
+
+        <div class="task-card">
+            <span class="company">SwiftPay</span>
+            <h3>Optimize Home page</h3>
+            <p class="task-detail">Debug using Chrome DevTools, check for overlapping issues.</p>
+            <p class="deadline">Deadline <br><strong>21 March 2025</strong></p>
+            <button class="completed">Completed</button>
+        </div>
+
+        <div class="task-card">
+            <span class="company">Meta</span>
+            <h3>Add new emoji ✋</h3>
+            <p class="task-detail">Debug using Chrome DevTools, check for overlapping issues.</p>
+            <p class="deadline">Deadline <br><strong>21 March 2025</strong></p>
+            <button class="completed">Completed</button>
+        </div>
+
+        <div class="task-card">
+            <span class="company">Google LLC</span>
+            <h3>Integrate OpenAI API</h3>
+            <p class="task-detail">Debug using Chrome DevTools, check for overlapping issues.</p>
+            <p class="deadline">Deadline <br><strong>21 March 2025</strong></p>
+            <button class="completed">Completed</button>
+        </div>
+
+        <div class="task-card">
+            <span class="company">Glassdoor</span>
+            <h3>Improve Job searching</h3>
+            <p class="task-detail">Debug using Chrome DevTools, check for overlapping issues.</p>
+            <p class="deadline">Deadline <br><strong>21 March 2025</strong></p>
+            <button class="completed">Completed</button>
+        </div>
+    </div>
+</body>
+</html>
